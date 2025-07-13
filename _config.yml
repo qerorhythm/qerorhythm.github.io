@@ -308,3 +308,10 @@ defaults:
       comments: # true
       share: true
       related: true
+
+# Google Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-WB35LGPWBY" 
+    anonymize_ip: false 
