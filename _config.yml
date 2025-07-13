@@ -15,7 +15,7 @@
 minimal_mistakes_skin: "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale: "en-US"
+locale: "ja-JP"
 rtl: # true, false (default) # turns direction of the page into right to left for RTL languages
 title: "懶眠井蛙"
 title_separator: "-"
@@ -119,15 +119,15 @@ author:
   location: "草葉の陰"
   email:
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "qaerururu@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "qaerururu@email.com"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://your-website.com"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   # url: "https://twitter.com/"
 
 
 
