@@ -7,7 +7,7 @@ search: false
 
 //Font
 $sans-serif: "Klee One", sans-serif;
-$doc-font-size: 20px;
+$doc-font-size: 16px;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
@@ -20,4 +20,13 @@ $doc-font-size: 20px;
   img {
     border-radius: 10%;
   }
+}
+
+//Margin
+.page__title {
+  margin-bottom: 2rem;
+}
+
+.btn--x span {
+  display: none;
 }

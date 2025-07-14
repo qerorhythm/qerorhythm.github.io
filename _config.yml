@@ -104,12 +104,12 @@ social:
   name: # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
-# Analytics
+# Google Analytics
 analytics:
-  provider: # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider: "google-gtag"
   google:
-    tracking_id:
-    anonymize_ip: # true, false (default)
+    tracking_id: "G-WB35LGPWBY" 
+    anonymize_ip: false 
 
 # Site Author
 author:
@@ -303,15 +303,8 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
+      author_profile: false
+      read_time: false
+      comments: false
       share: true
       related: true
-
-# Google Analytics
-analytics:
-  provider: "google-gtag"
-  google:
-    tracking_id: "G-WB35LGPWBY" 
-    anonymize_ip: false 
