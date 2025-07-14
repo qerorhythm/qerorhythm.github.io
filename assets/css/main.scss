@@ -5,7 +5,19 @@ search: false
 
 @charset "utf-8";
 
+//Font
 $sans-serif: "Klee One", sans-serif;
+$doc-font-size: 20px;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+//Author avatar
+.author__avatar {
+  width: 72px;
+  height: 72px;
+
+  img {
+    border-radius: 10%;
+  }
+}
