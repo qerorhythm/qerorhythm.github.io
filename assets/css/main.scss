@@ -22,11 +22,22 @@ $doc-font-size: 16px;
   }
 }
 
-//Margin
+//Post title margin
 .page__title {
   margin-bottom: 2rem;
 }
 
+//Share button
 .btn--x span {
   display: none;
+}
+
+//Archive subtitle
+.archive__subtitle {
+  font-size: $type-size-4;
+}
+
+//Archive excerpt
+.archive__item-excerpt {
+  font-size: $type-size-5;
 }
