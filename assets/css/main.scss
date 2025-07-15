@@ -41,3 +41,14 @@ $doc-font-size: 16px;
 .archive__item-excerpt {
   font-size: $type-size-5;
 }
+
+/* グリッドレイアウトを解除する */
+.page__related .grid {
+  display: block;
+}
+
+/* 各記事を横幅いっぱいに広げる */
+.page__related .grid__item {
+  width: 100%;
+  margin-bottom: 1.5rem; /* 記事ごとの間隔を空ける */
+}

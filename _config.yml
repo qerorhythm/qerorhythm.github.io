@@ -308,3 +308,6 @@ defaults:
       comments: false
       share: true
       related: true
+
+# Date
+date_format: "%Y-%m-%d"

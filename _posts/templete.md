@@ -22,8 +22,6 @@ share: true
 related: true
 ---
 
-##
-
 <!-- **太字**
 *イタリック*
 [リンク](https://example.com)
