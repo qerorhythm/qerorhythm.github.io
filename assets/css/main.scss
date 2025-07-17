@@ -52,3 +52,15 @@ $doc-font-size: 16px;
   width: 100%;
   margin-bottom: 1.5rem; /* 記事ごとの間隔を空ける */
 }
+
+/* figureヘルパー用のカスタム画像サイズ */
+.page__content .half {
+  width: 100%; /* 横幅を記事エリアの50%に */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- figureで挿入した画像のキャプションを中央揃えにする --- */
+.page__caption {
+  text-align: center !important;
+}

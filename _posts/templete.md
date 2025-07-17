@@ -8,8 +8,8 @@ tags:
   -
 
 header:
-  image: /assets/images/dotpict_frog_nesoberi_yokonaga.png
-  og_image: /assets/images/frog_branko_back.png
+  image: /assets/images/header_nesoberi.png
+  og_image: /assets/images/og_qero.png
 
 excerpt: ""
 
