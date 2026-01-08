@@ -65,3 +65,64 @@ $doc-font-size: 16px;
 .page__caption {
   text-align: center !important;
 }
+
+/* 画像とキャプションを中央に揃え、最大サイズを制限する */
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.8em auto;
+  text-align: center;
+
+  img {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0.2em;
+  }
+
+  figcaption {
+    margin-top: 0.2em; /* キャプション上の隙間をさらに詰める */
+    line-height: 1.2; /* キャプション行間の調整 */
+    font-size: 0.8em; /* キャプションを少し小さくするとバランスが良いです */
+  }
+}
+
+/* 「half」クラスが指定されている時の拘束を上書き */
+figure.half {
+  width: 50%;
+  @media (max-width: 600px) {
+    width: 100%; /* スマホでは画面一杯に広げる */
+  }
+}
+
+/* 画像を横並びにするためのコンテナ */
+.flex-row {
+  display: flex; /* 中身を横並びにする魔法の言葉 */
+  flex-wrap: wrap; /* 画面が狭いときは自動で折り返す */
+  justify-content: center; /* 中央寄せ */
+  gap: 10px; /* 画像と画像の間の隙間 */
+  margin-bottom: 1.5em; /* 下の文章との余白 */
+
+  /* このコンテナの中にある figure タグへの特別ルール */
+  figure {
+    flex: 1 1 30%; /* 伸縮自在にしつつ、基本幅を30%くらいに設定 */
+    max-width: 45%; /* 2枚並びを想定して最大幅を制限（3枚並びたい場合は32%くらいにする） */
+    margin: 0; /* 親のfigure設定でついた余白をリセット */
+
+    img {
+      max-width: 100%; /* 画像の幅をfigureの幅いっぱいに合わせる */
+      height: 350px; /* 高さを一定に固定（好みの数値に変えてください） */
+      object-fit: cover; /* 比率を保ったまま、指定した高さに収まるよう切り抜く */
+      border-radius: 6px;
+      margin-bottom: 0.2em;
+    }
+
+    /* スマホ画面（幅600px以下）での表示設定 */
+    @media (max-width: 600px) {
+      max-width: 100%; /* スマホでは横幅いっぱいにして縦積みに戻す */
+      flex-basis: 100%;
+    }
+  }
+}
