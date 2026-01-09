@@ -3,7 +3,7 @@ title: "qero"
 layout: single
 permalink: /about/
 header:
-  overlay_image: /assets/images/dotpict_frog_nesoberi.png
+  overlay_image: /assets/images/others/header_nesoberi.png
 ---
 
 ## 私は誰か
