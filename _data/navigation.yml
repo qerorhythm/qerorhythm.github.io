@@ -1,11 +1,11 @@
 # main links
 # main links
 main:
-  - title: "qero"
-    url: /about/
   - title: "書庫"
     url: /categories/
   - title: "索引"
     url: /tags/
   - title: "ゲーム図鑑"
     url: /games/
+  - title: "私"
+    url: /about/
