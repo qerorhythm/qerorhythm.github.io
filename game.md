@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "ゲーム図鑑"
+title: "ゲーム記録"
 permalink: /games/
 author_profile: true
 ---

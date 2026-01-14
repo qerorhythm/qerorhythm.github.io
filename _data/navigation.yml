@@ -1,11 +1,11 @@
 # main links
 # main links
 main:
-  - title: "書庫"
+  - title: "本棚"
     url: /categories/
   - title: "索引"
     url: /tags/
-  - title: "ゲーム図鑑"
+  - title: "ゲーム記録"
     url: /games/
   - title: "私"
     url: /about/

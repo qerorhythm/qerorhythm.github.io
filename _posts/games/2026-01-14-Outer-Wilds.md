@@ -1,6 +1,6 @@
 ---
 title: "Outer Wilds"
-date: 2026-01-10 21:34:27 +0900
+date: 2026-01-14 20:37:15 +0900
 categories:
   - ゲーム
 tags:
@@ -9,7 +9,7 @@ tags:
 header:
   image: /assets/images/posts/games/Outer-Wilds/header.jpg
   og_image: /assets/images/others/og_qero.png
-excerpt: ""
+excerpt: "宇宙を胸に"
 toc: true
 toc_label: "INDEX"
 toc_icon: "gamepad"
@@ -29,7 +29,7 @@ author_profile: true
 
 ## **感想**
 
-#### ゲームプレイ
+### ・ゲームプレイ
 
 兎に角ネタバレ厳禁、知識を得ることこそが最重要のゲーム体験です。  
 クリアしたときに胸に溢れる、宇宙への想い、共鳴は唯一無二です。
@@ -61,7 +61,7 @@ OuterWilds に限らず 3 次元移動のあるゲームは往々にして操作
 最初は何をやっているかわからないし、マシュマロは焦げるし、人を選ぶゲームだとは思います。  
 ただ、このゲーム体験は素晴らしく後悔はしません。
 
-#### ビジュアル･音楽
+### ・ビジュアル･音楽
 
 音楽なしにこのゲームは語れません。  
 宇宙への郷愁という、ある種矛盾した感情にリンクする素晴らしい BGM たちがいます。  
@@ -73,11 +73,26 @@ OuterWilds に限らず 3 次元移動のあるゲームは往々にして操作
 
 宇宙に飛び立ちますが近未来的な装備ではなく、手作り感満載の宇宙船も味があっていいです。
 
-#### その他
+### ・その他
 
-記念すべきゲーム図鑑第一弾に相応しいゲームです。  
+記念すべきゲーム記録第一弾に相応しいゲームです。  
 私のゲーム史において、最も記憶に残り、最も記憶を消してプレイしたいゲームかもしれません。
 
 ゲームって、プレイ自体が楽しいスポーツみたいなものもあれば、その物語を大事にしたい本のようなものもあると思っています。  
 今回は後者寄りですね。  
 興味があれば、一緒に宇宙を解き明かしてみてください。
+
+---
+
+## **ギャラリー**
+
+![](/assets/images/posts/games/Outer-Wilds/screenshot_1.jpg)
+<br><br>
+![](/assets/images/posts/games/Outer-Wilds/screenshot_2.jpg)
+<br><br>
+![](/assets/images/posts/games/Outer-Wilds/screenshot_3.jpg)
+<br><br>
+![](/assets/images/posts/games/Outer-Wilds/screenshot_4.jpg)
+<br><br>
+![](/assets/images/posts/games/Outer-Wilds/screenshot_5.jpg)
+<br><br>
