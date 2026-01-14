@@ -6,6 +6,7 @@ categories:
 tags:
   - 図鑑
   - "Outer Wilds"
+kana: "あうたーわいるず"
 header:
   image: /assets/images/posts/games/Outer-Wilds/header.jpg
   og_image: /assets/images/others/og_qero.png
