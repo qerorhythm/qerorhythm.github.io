@@ -4,7 +4,7 @@ date: 2026-01-14 20:37:15 +0900
 categories:
   - ゲーム
 tags:
-  - 図鑑
+  - 記録
   - "Outer Wilds"
 kana: "あうたーわいるず"
 header:

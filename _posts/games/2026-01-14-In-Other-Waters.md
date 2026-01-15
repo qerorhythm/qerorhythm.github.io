@@ -4,7 +4,7 @@ date: 2026-01-14 21:43:54 +0900
 categories:
   - ゲーム
 tags:
-  - 図鑑
+  - 記録
   - "In Other Waters"
 kana: "いんあざーうぉーたーず"
 header:
