@@ -4,15 +4,15 @@ date: 2026-01-14 21:43:54 +0900
 categories:
   - ゲーム
 tags:
-  - 記録
-  - "In Other Waters"
+  - インディー
+  - 海
 kana: "いんあざーうぉーたーず"
 header:
   image: /assets/images/posts/games/In-Other-Waters/header.jpg
   og_image: /assets/images/others/og_qero.png
 excerpt: "幾何学の海"
 toc: true
-toc_label: "INDEX"
+toc_label: "目次"
 toc_icon: "gamepad"
 author_profile: true
 ---

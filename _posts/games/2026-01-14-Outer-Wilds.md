@@ -4,15 +4,15 @@ date: 2026-01-14 20:37:15 +0900
 categories:
   - ゲーム
 tags:
-  - 記録
-  - "Outer Wilds"
+  - インディー
+  - 宇宙
 kana: "あうたーわいるず"
 header:
   image: /assets/images/posts/games/Outer-Wilds/header.jpg
   og_image: /assets/images/others/og_qero.png
 excerpt: "宇宙を胸に"
 toc: true
-toc_label: "INDEX"
+toc_label: "目次"
 toc_icon: "gamepad"
 author_profile: true
 ---

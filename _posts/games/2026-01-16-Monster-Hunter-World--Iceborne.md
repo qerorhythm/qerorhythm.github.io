@@ -4,15 +4,14 @@ date: 2026-01-16 23:54:47 +0900
 categories:
   - ゲーム
 tags:
-  - 記録
-  - "Monster Hunter World: Iceborne"
-kana: ""
+  - モンハン
+kana: "もんすたーはんたーわーるどあいすぼーん"
 header:
   image: /assets/images/posts/games/Monster-Hunter-World--Iceborne/header.png
   og_image: /assets/images/others/og_qero.png
-excerpt: ""
+excerpt: "六花が静かに眠るなら"
 toc: true
-toc_label: "INDEX"
+toc_label: "目次"
 toc_icon: "gamepad"
 author_profile: true
 ---
