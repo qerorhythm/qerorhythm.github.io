@@ -4,7 +4,7 @@
   </h4>
 
   <a
-    href="https://x.com/intent/tweet?{% if site.twitter.username %}via={{ site.twitter.username | url_encode }}&{% endif %}text={{ page.title | url_encode }}%20{{ page.url | absolute_url | url_encode }}&hashtags={% if page.categories contains 'ゲーム' %}ゲーム記録{% elsif page.categories contains '雑記' %}雑記{% elsif page.categories contains '日記' %}日記{% endif %}"
+    href="https://x.com/intent/tweet?{% if site.twitter.username %}via={{ site.twitter.username | url_encode }}&{% endif %}text={{ page.title | url_encode }}%20{% if page.categories contains 'ゲーム' %}%23ゲーム記録%20{% elsif page.categories contains '雑記' %}%23雑記%20{% elsif page.categories contains '日記' %}%23日記%20{% endif %}{{ page.url | absolute_url | url_encode }}"
     class="btn btn--x"
     aria-label="Share on X"
     onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
