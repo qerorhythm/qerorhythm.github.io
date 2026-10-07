@@ -1,3 +1,37 @@
 <!-- start custom footer snippets -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // 記事エリアと目次を探す
+    var pageContent = document.querySelector(".page__content");
+    var tocElement = document.querySelector("nav.toc");
 
+    // 目次がない記事では何もしない
+    if (!pageContent || !tocElement) return;
+
+    // 目次に目印となるIDを付与
+    if (!tocElement.id) {
+      tocElement.id = "page-toc";
+    }
+
+    // 記事内の見出し（h2, h3, h4）に目次へ戻る機能をつける
+    var headings = pageContent.querySelectorAll("h2, h3, h4");
+    headings.forEach(function (heading) {
+      // 見出しの横に「↑」アイコンを付与
+      var backLink = document.createElement("a");
+      backLink.className = "toc-back-arrow";
+      backLink.href = "#page-toc";
+      backLink.title = "目次へ戻る";
+      backLink.innerHTML = '<i class="fas fa-arrow-up"></i>';
+      heading.appendChild(backLink);
+
+      // 見出しをクリック/タップしたときも目次にスムーズスクロール
+      heading.style.cursor = "pointer";
+      heading.addEventListener("click", function (e) {
+        if (e.target.tagName !== "A") {
+          tocElement.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+  });
+</script>
 <!-- end custom footer snippets -->

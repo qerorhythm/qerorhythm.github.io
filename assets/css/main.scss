@@ -43,15 +43,34 @@ $doc-font-size: 16px;
   font-size: $type-size-5;
 }
 
-/* グリッドレイアウトを解除する */
-.page__related .grid {
-  display: block;
-}
+/* 関連記事（最近の記事）の縦並びリスト化＆位置・サイズ統一 */
+.page__related {
+  .grid__wrapper {
+    display: block;
+    margin-right: 0 !important;
+    margin-inline-end: 0 !important;
+  }
 
-/* 各記事を横幅いっぱいに広げる */
-.page__related .grid__item {
-  width: 100%;
-  margin-bottom: 1.5rem; /* 記事ごとの間隔を空ける */
+  .grid__item {
+    float: none !important; /* 横並びの回り込みを完全解除 */
+    width: 100% !important; /* 幅を100%に */
+    margin-left: 0 !important; /* 2つ目以降のインデントを強制解除 */
+    margin-inline-start: 0 !important; /* 同上（モダンブラウザ対応） */
+    margin-bottom: 2rem; /* 記事同士の間隔 */
+
+    /* タイトルの位置とサイズを完全統一 */
+    .archive__item-title {
+      font-size: 1.15em !important;
+      margin-top: 0;
+      margin-bottom: 0.25em;
+    }
+
+    /* 抜粋テキストのサイズ統一 */
+    .archive__item-excerpt {
+      font-size: 0.9em !important;
+      margin: 0;
+    }
+  }
 }
 
 /* figureヘルパー用のカスタム画像サイズ */
@@ -144,7 +163,9 @@ figure.half {
   border-radius: 12px;
   overflow: hidden;
   text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
 
@@ -237,4 +258,45 @@ hr {
 /* 2. H2（感想）自体の下余白も少し削ると、より密着します */
 .page__content h2 {
   margin-bottom: 0.1em !important;
+}
+
+/* ==========================================================================
+   見出しタップで目次へ戻るリンクのスタイル
+   ========================================================================== */
+
+.page__content {
+  h2,
+  h3,
+  h4 {
+    position: relative;
+    user-select: none; /* スマホタップ時のテキスト誤選択を防止 */
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #008080; /* ホバー時に鴨の羽色に */
+    }
+
+    /* 目次へ戻る「↑」アイコン */
+    .toc-back-arrow {
+      display: inline-block;
+      margin-left: 0.5em;
+      font-size: 0.65em;
+      color: rgba(47, 77, 77, 0.35); /* 控えめな色 */
+      vertical-align: middle;
+      text-decoration: none;
+      transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+
+      &:hover {
+        color: #008080;
+        transform: translateY(-2px); /* 少し上に動く */
+      }
+    }
+  }
+}
+
+/* 古いパーマリンク（Permalinkの文字とリンクアイコン）を完全非表示 */
+.header-link {
+  display: none !important;
 }
