@@ -1,6 +1,6 @@
 {
   "pasteImage.basePath": "${projectRoot}",
-  "pasteImage.path": "${projectRoot}/assets/images/posts/scraps/${currentFileNameWithoutExt}",
+  "pasteImage.path": "${projectRoot}/assets/images/posts/trips/${currentFileNameWithoutExt}",
   "pasteImage.insertPattern": "{% include figure image_path=\"/${imageFilePath}\" alt=\"\" caption=\"\" %}",
   "pasteImage.forceUnixStyleSeparator": true,
   "pasteImage.prefix": "",
