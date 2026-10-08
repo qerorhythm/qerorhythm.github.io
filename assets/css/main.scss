@@ -300,3 +300,125 @@ hr {
 .header-link {
   display: none !important;
 }
+
+/* ==========================================================================
+   トップページ：全幅ヒーロー（画面いっぱいに広がる動画）
+   ========================================================================== */
+
+.home-hero-wide {
+  width: 100%;
+  background-color: #272116; /* 動画の背景色と同化させて画面端まで広げる */
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  &__container {
+    width: 100%;
+    height: 65vh; /* 画面の高さの約65%を占めるド迫力サイズ（お好みで調整可能） */
+    max-height: 600px; /* 巨大モニターで縦に広がりすぎない上限 */
+    min-height: 380px; /* スマホ等でも小さくなりすぎない下限 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* アスペクト比を保ちつつ、背景色と同化して全幅に見せる */
+    display: block;
+
+    /* ピクセルをボヤけさせず、シャープに拡大する設定 */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+  }
+}
+
+/* ==========================================================================
+   トップページ：フルスクリーン・ビジュアル
+   ========================================================================== */
+
+.home-hero-fullscreen {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  min-height: 500px;
+  background-color: #272116;
+  overflow: hidden;
+
+  &__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+  }
+}
+
+/* 下部の記事エリアと本棚ボタン */
+.home-main-content {
+  margin-top: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-more-posts {
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+
+  .btn {
+    padding: 0.6em 1.5em;
+    font-size: 0.95em;
+    border-radius: 24px; /* 丸みのあるやさしいボタン */
+  }
+}
+
+/* ==========================================================================
+   トップページ：最下部のミニ名刺
+   ========================================================================== */
+
+.home-footer-author {
+  text-align: center;
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  border-top: 1px dashed rgba(0, 128, 128, 0.2); /* 控えめな区切り線 */
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 16px;
+    border-radius: 30px;
+    color: #2f4d4d;
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: rgba(0, 128, 128, 0.08); /* 鴨の羽色の薄い下地 */
+      color: #008080;
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+  }
+
+  &__avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  &__name {
+    font-size: 0.95rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+}

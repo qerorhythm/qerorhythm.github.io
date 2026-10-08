@@ -2,7 +2,7 @@
 layout: archive
 title: "ゲーム記録"
 permalink: /games/
-author_profile: true
+author_profile: false
 ---
 
 <div class="game-grid">

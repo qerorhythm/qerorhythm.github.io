@@ -1,20 +1,57 @@
 ---
-layout: archive
+layout: default
 ---
 
-{{ content }}
-
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
-
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% include documents-collection.html entries=posts type=entries_layout %}
+<!-- 画面いっぱいの動画ヒーローエリア -->
+<div class="home-hero-fullscreen">
+  <video autoplay loop muted playsinline class="home-hero-fullscreen__video">
+    <source
+      src="{{ '/assets/videos/home/Frog_kaiten.mp4' | relative_url }}"
+      type="video/mp4"
+    />
+    <source
+      src="{{ '/assets/videos/home/frog_kaiten.mp4' | relative_url }}"
+      type="video/mp4"
+    />
+  </video>
 </div>
 
-{% include paginator.html %}
+<!-- メインコンテンツ -->
+<div id="main" role="main" class="home-main-content">
+  <div class="archive">
+    {{ content }}
+
+    <h3 class="archive__subtitle">最近の記録</h3>
+
+    <!-- 最新3件 -->
+    <div class="entries-list">
+      {% for post in site.posts limit:3 %} {% include archive-single.html
+      type="list" %} {% endfor %}
+    </div>
+
+    <!-- 本棚への誘導ボタン -->
+    <div class="home-more-posts">
+      <a href="{{ '/categories/' | relative_url }}" class="btn btn--primary"
+        >記録一覧 &rarr;</a
+      >
+    </div>
+
+    <!-- 最下部のミニ名刺（Aboutへの導線） -->
+    <div class="home-footer-author">
+      <a
+        href="{{ '/about/' | relative_url }}"
+        class="home-footer-author__link"
+        title="私"
+      >
+        <img
+          src="{{ site.author.avatar | default: '/assets/images/others/dotpict_frog_nemui.PNG' | relative_url }}"
+          alt="qero"
+          class="home-footer-author__avatar"
+        />
+        <span class="home-footer-author__name"
+          >{{ site.author.name | default: 'qero' }}</span
+        >
+      </a>
+    </div>
+  </div>
+</div>
