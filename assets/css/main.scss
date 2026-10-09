@@ -422,3 +422,19 @@ hr {
     letter-spacing: 0.05em;
   }
 }
+
+/* カテゴリ等の「ページ上部へ戻る」矢印スタイル */
+.back-to-top {
+  font-size: 1.1em !important; /* 矢印を押しやすい大きさに */
+  color: rgba(47, 77, 77, 0.4); /* 控えめな文字色 */
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+  padding: 4px 8px;
+
+  &:hover {
+    color: #008080; /* 鴨の羽色に */
+    text-decoration: none;
+    transform: translateY(-2px); /* 少し上に浮く */
+  }
+}
