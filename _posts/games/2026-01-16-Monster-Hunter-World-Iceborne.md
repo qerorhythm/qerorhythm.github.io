@@ -5,9 +5,10 @@ categories:
   - ゲーム
 tags:
   - モンハン
+  - MHW:IB
 kana: "もんすたーはんたーわーるどあいすぼーん"
 header:
-  image: /assets/images/posts/games/Monster-Hunter-World--Iceborne/header.png
+  image: /assets/images/posts/games/Monster-Hunter-World-Iceborne/header.png
   og_image: /assets/images/others/og_qero.png
 excerpt: "六花が静かに眠るなら"
 toc: true
@@ -91,15 +92,15 @@ World の｢星に駆られて｣や｢名もなき狩人の矜持｣がとて�
 
 ## **ギャラリー**
 
-{% include figure image_path="/assets/images/posts/games/Monster-Hunter-World--Iceborne/6.png" alt="" caption="夕焼け" %}
+{% include figure image_path="/assets/images/posts/games/Monster-Hunter-World-Iceborne/6.png" alt="" caption="夕焼け" %}
 <br><br>
-![](/assets/images/posts/games/Monster-Hunter-World--Iceborne/screenshot_1.jpg)
+![](/assets/images/posts/games/Monster-Hunter-World-Iceborne/screenshot_1.jpg)
 <br><br>
-![](/assets/images/posts/games/Monster-Hunter-World--Iceborne/screenshot_2.jpg)
+![](/assets/images/posts/games/Monster-Hunter-World-Iceborne/screenshot_2.jpg)
 <br><br>
-![](/assets/images/posts/games/Monster-Hunter-World--Iceborne/screenshot_3.jpg)
+![](/assets/images/posts/games/Monster-Hunter-World-Iceborne/screenshot_3.jpg)
 <br><br>
-![](/assets/images/posts/games/Monster-Hunter-World--Iceborne/screenshot_4.jpg)
+![](/assets/images/posts/games/Monster-Hunter-World-Iceborne/screenshot_4.jpg)
 <br><br>
-![](/assets/images/posts/games/Monster-Hunter-World--Iceborne/screenshot_5.jpg)
+![](/assets/images/posts/games/Monster-Hunter-World-Iceborne/screenshot_5.jpg)
 <br><br>

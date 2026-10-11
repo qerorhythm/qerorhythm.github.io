@@ -8,7 +8,7 @@ author_profile: false
 <div class="game-grid">
   {% for post in site.posts %}
     {% comment %} カテゴリに「ゲーム」が含まれているか判定 {% endcomment %}
-    {% if post.categories contains "ゲーム" %}
+    {% if post.categories contains "ゲーム" and post.hide_from_games != true %}
       <a href="{{ post.url | relative_url }}" class="game-card">
         <div class="game-card__image">
           {% comment %} 画像パスを取得（teaser優先、なければimage） {% endcomment %}
