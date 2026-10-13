@@ -14,7 +14,7 @@ excerpt: "宇宙を胸に"
 toc: true
 toc_label: "目次"
 toc_icon: "gamepad"
-author_profile: true
+author_profile: false
 ---
 
 ## **概要**

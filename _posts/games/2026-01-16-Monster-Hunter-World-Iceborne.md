@@ -14,7 +14,7 @@ excerpt: "六花が静かに眠るなら"
 toc: true
 toc_label: "目次"
 toc_icon: "gamepad"
-author_profile: true
+author_profile: false
 ---
 
 ## **概要**
