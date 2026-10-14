@@ -1,22 +1,64 @@
-<!-- start custom footer snippets -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    // 記事エリアと目次を探す
     var pageContent = document.querySelector(".page__content");
     var tocElement = document.querySelector("nav.toc");
+    var tocAside = document.querySelector("aside.sidebar__right");
 
-    // 目次がない記事では何もしない
     if (!pageContent || !tocElement) return;
 
-    // 目次に目印となるIDを付与
+    // 1. 目次にIDを付与
     if (!tocElement.id) {
       tocElement.id = "page-toc";
     }
 
-    // 記事内の見出し（h2, h3, h4）に目次へ戻る機能をつける
-    var headings = pageContent.querySelectorAll("h2, h3, h4");
-    headings.forEach(function (heading) {
-      // 見出しの横に「↑」アイコンを付与
+    // 2. 本文の「最初の見出し」を正しく探す（目次の中のH4は絶対に除外する！）
+    var allHeadings = pageContent.querySelectorAll("h2, h3, h4");
+    var firstHeading = null;
+    for (var i = 0; i < allHeadings.length; i++) {
+      if (
+        !allHeadings[i].closest(".toc") &&
+        !allHeadings[i].closest(".sidebar__right")
+      ) {
+        firstHeading = allHeadings[i];
+        break;
+      }
+    }
+
+    // 3. スマホ時の目次の位置を自動調整
+    if (tocAside) {
+      var customPos = document.getElementById("toc-here");
+      if (customPos) {
+        customPos.parentNode.insertBefore(tocAside, customPos);
+      } else if (firstHeading) {
+        // 見出しの手前に横線 <hr> があるか探す
+        var prev = firstHeading.previousElementSibling;
+        var hrTarget = null;
+
+        if (prev && prev.tagName === "HR") {
+          hrTarget = prev;
+        } else if (
+          prev &&
+          prev.previousElementSibling &&
+          prev.previousElementSibling.tagName === "HR"
+        ) {
+          hrTarget = prev.previousElementSibling;
+        }
+
+        if (hrTarget) {
+          // 横線の手前に目次を置く → [前書き] → [目次] → [横線] → [見出し]
+          hrTarget.parentNode.insertBefore(tocAside, hrTarget);
+        } else {
+          // 横線がなければ見出しの直前に置く
+          firstHeading.parentNode.insertBefore(tocAside, firstHeading);
+        }
+      }
+    }
+
+    // 4. 見出しタップで目次へ戻る機能（本文の見出しだけに付与）
+    allHeadings.forEach(function (heading) {
+      // 目次内のタイトルには矢印を付けない
+      if (heading.closest(".toc") || heading.closest(".sidebar__right")) return;
+
       var backLink = document.createElement("a");
       backLink.className = "toc-back-arrow";
       backLink.href = "#page-toc";
@@ -24,7 +66,6 @@
       backLink.innerHTML = '<i class="fas fa-arrow-up"></i>';
       heading.appendChild(backLink);
 
-      // 見出しをクリック/タップしたときも目次にスムーズスクロール
       heading.style.cursor = "pointer";
       heading.addEventListener("click", function (e) {
         if (e.target.tagName !== "A") {
@@ -34,4 +75,3 @@
     });
   });
 </script>
-<!-- end custom footer snippets -->
